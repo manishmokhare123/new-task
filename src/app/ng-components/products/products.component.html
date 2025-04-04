@@ -1,0 +1,32 @@
+
+    <body>
+        <h2>Product Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Price (USD)</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of productData">
+                    <td>{{product.id}}</td>
+                    <td>{{product.title}}</td>
+                    <td>{{product.description}}</td>
+                    <td>{{product.category | titlecase}}</td>
+                    <td>{{product.price | currency}}</td>
+                    <td>
+                        <div *ngFor="let image of product.images">
+                            <img class="image" *ngIf="image" [src]="image" width="50">
+                            <br>
+                            <button class="update-btn">Update</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>

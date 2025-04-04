@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<body>
+    <div class="login-container">
+        <div class="user-icon">
+            <img src="./assets/icons/user-icon.png">
+        </div>
+        <h2>LOGIN</h2>
+        <form [formGroup]="loginForm">
+            <input type="text" placeholder="Username" formControlName="username">
+            <input type="password" placeholder="Password" formControlName="password">
+        </form>
+        <button type="submit" (click)="submit()">LOGIN</button>
+    </div>
+</body>

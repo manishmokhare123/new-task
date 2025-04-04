@@ -1,0 +1,11 @@
+
+    <body>
+        <div class="profile-card">
+            <img class="profile-img" *ngIf="userDetails?.image" [src]="userDetails?.image">
+            <h2>{{userDetails?.firstName}} {{userDetails?.lastName}}</h2>
+            <p>{{userDetails?.username}}</p>
+            <p>Gender: {{userDetails?.gender | titlecase}}</p>
+            <a class="email" href="mailto:emily.johnson@x.dummyjson.com">{{userDetails?.email}}</a>
+        </div>
+
+    </body>
