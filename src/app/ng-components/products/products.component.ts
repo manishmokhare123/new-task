@@ -29,10 +29,18 @@ export class ProductsComponent implements OnInit {
             } else { 
                 this.productData = [];
             }
-
-
-
         });
+    }
+
+    getProductList(uniqueId: any) {
+        return this.productData?.filter((item: { category: any; }) => item.category === uniqueId);
+    }
+
+    saveProductToProductList(product: any) {
+        let productList = JSON.parse(localStorage.getItem('productList') || '[]');
+        productList.push(product);
+        localStorage.setItem('productList', JSON.stringify(productList));
+        alert("Product added to product list successfully");
     }
 
 }
