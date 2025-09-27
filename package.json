@@ -51,10 +51,10 @@
     "sweetalert2": "^11.7.11",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
     "zone.js": "~0.14.8"
-},
-"devDependencies": {
+  },
+  "devDependencies": {
     "@angular-devkit/build-angular": "^17.3.8",
-    "@angular/cli": "~17.3.8",
+    "@angular/cli": "^17.3.17",
     "@angular/compiler-cli": "^17.3.12",
     "@types/file-saver": "^2.0.7",
     "@types/jasmine": "~4.3.0",
@@ -67,5 +67,5 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "tslib": "^2.5.2",
     "typescript": "~5.4.5"
-}
+  }
 }
