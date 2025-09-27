@@ -43,4 +43,9 @@ export class ProductsComponent implements OnInit {
         alert("Product added to product list successfully");
     }
 
+
+    getProductDetails(productId: any) {
+        return this.productData?.find((item: { id: any; }) => item.id === productId);
+    }
+
 }
