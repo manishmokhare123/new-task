@@ -15,6 +15,7 @@ export class ProductsComponent implements OnInit {
   ) { }
 
     ngOnInit(): void {
+      console.log("fetch data successfully");
       
         this.fetchApiData();
     }
@@ -25,9 +26,13 @@ export class ProductsComponent implements OnInit {
 
             if (response) {
                 this.productData = response?.products;
+            } else { 
+                this.productData = [];
             }
 
-        });;
+
+
+        });
     }
 
 }

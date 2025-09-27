@@ -11,6 +11,9 @@
                 padding: 10px 20px;
                 color: white;
             }
+            .newClass {
+                display: block;
+            }
 
             .navbar a {
                 color: white;
@@ -23,6 +26,10 @@
                 border-radius: 5px;
             }
 
+            .logout-btn{
+                display: none;
+                background-color: #ff4d4d;
+            }
             .logout-btn {
                 background-color: #ff4d4d;
                 color: white;
